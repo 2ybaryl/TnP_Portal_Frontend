@@ -18,11 +18,11 @@ class SideNav extends React.Component {
                 <hr/>
                 <div className="navbar">
                     <ul>
-                        <li> <Link to="/">ApplicationDashboard</Link></li>
+                        <li> <Link to="/">Application Dashboard</Link></li>
                         <li> <Link to="/profile">Profile</Link></li>
                         <li> <Link to="/jobs">Available Jobs</Link></li>
                         <li> <Link to="/resume">Resume</Link></li>
-                        <li> <Link to="/policy">PlacementPolicy</Link></li>
+                        <li> <Link to="/policy">Placement Policy</Link></li>
                     </ul>
                 </div>
             </section>

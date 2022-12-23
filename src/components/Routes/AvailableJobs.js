@@ -1,8 +1,10 @@
 import React from "react";
 import '../stylesheets/AvailableJobs.css'
 import SideNav from "../commons/SideNav";
+import JobDescription from "../commons/JobDescription";
 class AvailableJobs extends React.Component {
     render() {
+       
         return (
             <div className="aj">
             <div className="main-section">
@@ -10,7 +12,11 @@ class AvailableJobs extends React.Component {
                     <SideNav/>
                 </div>
                 <div className="right-section">
-                    <h1>Available Jobs</h1>
+                    <JobDescription/>
+                    <JobDescription/>
+                    <JobDescription/>
+                    <JobDescription/>
+                    <JobDescription/>
                 </div>
             </div>
         </div>
