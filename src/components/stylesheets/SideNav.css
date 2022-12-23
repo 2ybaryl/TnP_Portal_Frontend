@@ -47,3 +47,7 @@ hr{
     padding: 3%;
     margin: 1.5%;
 }
+.navbar ul li a{
+    text-decoration: none;
+    color: #f1faee;
+}

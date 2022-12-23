@@ -1,4 +1,11 @@
 import React from "react";
+
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+  } from 'react-router-dom';
 import '../stylesheets/SideNav.css'
 class SideNav extends React.Component {
     render() {
@@ -11,11 +18,11 @@ class SideNav extends React.Component {
                 <hr/>
                 <div className="navbar">
                     <ul>
-                        <li>Profile</li>
-                        <li>Application Dashboard</li>
-                        <li>Available Jobs</li>
-                        <li>Resume</li>
-                        <li>Placement Policy</li>
+                        <li> <Link to="/">ApplicationDashboard</Link></li>
+                        <li> <Link to="/profile">Profile</Link></li>
+                        <li> <Link to="/jobs">Available Jobs</Link></li>
+                        <li> <Link to="/resume">Resume</Link></li>
+                        <li> <Link to="/policy">PlacementPolicy</Link></li>
                     </ul>
                 </div>
             </section>
