@@ -1,5 +1,4 @@
 
-import './App.css';
 import SideNav from './components/commons/SideNav';
 function App() {
   return (
