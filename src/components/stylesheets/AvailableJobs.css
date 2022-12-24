@@ -16,22 +16,28 @@
     flex-direction: row;
     justify-content: space-around;
     width: 140vh;
-    border: 2px solid black;
+    border: 2px solid #1d3557;
     height: 10%;
     padding: 20px;
     margin-top: 30px;
+    font-weight: 300;
 }
 
 .Job-status{
     color: green;
 }
 .hidden{
-    border: 2px solid black;
+    border: 2px solid #1d3557;
     border-top: none;
+    padding: 10px;
+    font-size: 17px;
+    color:#1d3557;
 }
 .showDetails{
+    color: #1d3557;
     background-color: white;
     border: none;
     cursor: pointer;
     font-size: 15px;
+    font-weight: 700;
 }

@@ -23,6 +23,7 @@ class SideNav extends React.Component {
                         <li> <Link to="/jobs">Available Jobs</Link></li>
                         <li> <Link to="/resume">Resume</Link></li>
                         <li> <Link to="/policy">Placement Policy</Link></li>
+                        <li> <Link to="/">Log Out</Link></li>
                     </ul>
                 </div>
             </section>
