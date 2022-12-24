@@ -1,25 +1,37 @@
 .aj .right-section{
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jdw{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
 }
 .jdw-top{
-   
     color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 120vh;
+    justify-content: space-around;
+    width: 140vh;
     border: 2px solid black;
     height: 10%;
     padding: 20px;
     margin-top: 30px;
 }
+
 .Job-status{
     color: green;
 }
 .hidden{
-    color: azure;
     border: 2px solid black;
     border-top: none;
-    display:none;
+}
+.showDetails{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
 }
