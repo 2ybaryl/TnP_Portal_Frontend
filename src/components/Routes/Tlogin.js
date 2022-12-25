@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "../stylesheets/Slogin.css";
+import React, { Component } from 'react'
+import '../stylesheets/Tlogin.css'
 
-export default class Slogin extends Component {
+export default class Tlogin extends Component {
   render() {
     return (
-      <div className="login">
+      <div className='tlogin'>
         <div className="left">
-          <div className="heading">STUDENT PORTAL</div>
+          <div className="heading">TEACHER PORTAL</div>
           <div className="card">
             <div className="head">Log In</div>
             <div className="subhead">
@@ -31,17 +31,12 @@ export default class Slogin extends Component {
                 <input type="submit" value="Sign in"></input>
               </form>
             </div>
-            <center>
-              <div className="foot">
-                Don't have an account yet? <a href="#">Sign Up</a>
-              </div>
-            </center>
           </div>
         </div>
         <div className="right">
           {/* Can put in something here */}
         </div>
       </div>
-    );
+    )
   }
 }
