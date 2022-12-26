@@ -14,20 +14,41 @@ import '../stylesheets/AvailableJobs.css'
                 {
                         show?<h1>Hello World !</h1>:null
                 } <button onClick={()=>setShow(!show)} >Toggle</button> </div> */}
+                
                 <div className="jdw">{
                    
                     show?<div className="hidden">
-                        <h5>Name of the Company: Netflix</h5>
-                        <h5>Hiring Position: </h5>
-                        <h5>Salary/Stipend: </h5>
-                        <h5>Elgibility Criteria: </h5>
-                        <h5>Process of Hiring: </h5>
+                        <h5 className='job-role'>We are looking for a talented designer to help us create beautiful and functional interfaces for our company. Your role requires you to understand users very well.</h5>
+                        
+                        <div className='job-tags'>
+                            <div className='tag' id = 'batch'>2024</div>
+                            <div className='tag' id = 'type'>Fulltime</div>
+                            <div className='tag' id = 'location'>Remote</div>
+                            <div className = 'tag' id='eligibility-tag'>CGPA > 8.0</div>
+                        </div>
+                        
+                        
+                        <hr></hr>
+                        <div className='job-tags-2'>
+                            <div className='job-salary'>Salary : 22 lpa</div>
+                            <div className='job-apply'><button>Apply Now</button></div>
+                        </div>
                     </div>:null
                 }
                   <div className="jdw-top">
-                        <h3 className="Job-title">React Developer Internship</h3>
+                        <div className='jdw-top-left'>
+                            <div className='Company-logo'>
+                                <img src = "https://cdn.dribbble.com/users/121337/screenshots/5885287/slack.png?compress=1&resize=400x300"></img>
+                            </div>
+                            <div className='Job-head'>
+                                <h3 className="Job-title">Junior UI/UX Designer</h3>
+                                <h3 className="Company-title">Slack Technologies, LLC</h3>
+                            </div>
+                        </div>
+                     
+                        
                         <h3 className="Job-status">Eligible</h3>
-                        <button className="showDetails" onClick={()=>setShow(!show)}>View Details</button>
+                        <button className="showDetails" onClick={()=>setShow(!show)}>Details</button>
                   </div>       
                         
                     </div>

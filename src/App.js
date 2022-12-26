@@ -19,6 +19,7 @@ function App() {
       {/* <SideNav /> */}
     <Routes>
                  <Route exact path='/' element={<Slogin/>}></Route>
+                 <Route exact path='/home' element={<ApplicationDashboard/>}></Route>
                  <Route exact path='/jobs' element={<AvailableJobs/>}></Route>
                  <Route exact path='/resume' element={< Resume />}></Route>
                  <Route exact path='/policy' element={<PlacementPolicy/>}></Route>

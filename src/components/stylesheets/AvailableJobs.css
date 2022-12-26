@@ -1,43 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500&display=swap');
 .aj .right-section{
-  margin-left: auto;
-  margin-right: auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #F9FBFC;
+}
+#JobDescription{
+   
+    width: 80vw;
+    display: flex;
+    justify-content: center;
 }
 .jdw{
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-direction: column-reverse;
-    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 5px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.Company-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Company-logo img{
+    height: 100px;
+}
+.Job-head{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Job-title{
+    font-size: 135%;
+}
+.Company-title{
+    font-size: 110%;
+    margin-top: 2%;
+    color: rgb(177, 177, 177);
 }
 .jdw-top{
     color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 140vh;
-    border: 2px solid #1d3557;
-    height: 10%;
-    padding: 20px;
-    margin-top: 30px;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 1%;
+  
+    width: 50vw;
+   
+  
     font-weight: 300;
 }
-
+.jdw-top-left{
+    display: flex;
+    flex-direction: row;
+}
 .Job-status{
     color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 125%;
+}
+.job-role{
+    padding-left: 5%;
+    
+    margin: 2px;
+    margin-top: none;
+    font-size: 100%;
+    word-wrap:normal;
+}
+
+.job-tags{
+    flex: 2;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.job-tags-2{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.job-salary{
+    font-weight: 600;
+    display: flex;
+    font-size: 110%;
+    flex-direction: column;
+    justify-content: center;
+    color: #1d3557;
+}
+.job-apply button{
+    background-color: #1d3557;
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 5px 0px;
+    border-radius: 7px;
+    padding: 7px 25px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    cursor: pointer;
+}
+.job-apply button:hover{
+    background-color: #1d3577;
+}
+.tag{
+    background-color: #FAAA55;
+    text-align: center;
+    width: 20%;
+    padding: 2%;
+    margin-top: auto;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #F9FBFC;
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.18) 1px 1px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 1px;
+
+    
+    color: black;
+}
+
+.eligibility-tag{
+    flex: 1;
+    background-color: #1d3557;
+    width: 10%;
+    color: #ffffff;
+    text-align: center;
 }
 .hidden{
-    border: 2px solid #1d3557;
-    border-top: none;
-    padding: 10px;
+    width: 50vw;
+    padding: 20px;
+    padding-top: 0px;
     font-size: 17px;
+    word-wrap: break-word;
     color:#1d3557;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+.hidden hr{
+    margin-top: 1.6%;
+    color: rgb(200, 200, 200);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
 }
 .showDetails{
-    color: #1d3557;
-    background-color: white;
-    border: none;
+   color: #1d3557;
+    background-color: #FFFFFF;
+    height: 20%;
+    padding: 20px;
+    
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 120%;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+   border: none;
+    cursor: pointer;
+}
+.showDetails:hover{
+    color: #3154b4;
+    transition:  0.2s ease 0s;
 }
