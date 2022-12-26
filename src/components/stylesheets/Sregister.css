@@ -10,7 +10,7 @@
     --darker-blue: #1d3577;
 }
 
-.login{
+.register{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -19,22 +19,23 @@
 
 /* Left Section begins here  */
 
-.login .left{
+.register .left{
     height: 100vh;
     width: 50vw;
     display: flex;
     flex-direction: column;
 }
 
-.login .left .heading{
+.register .left .heading{
     margin-left: 22%;
     font-size: 3em;
     font-weight: 700;
-    margin-top: 12%;
+    margin-top: 8%;
 }
+
 /* Card formation begins here */
 
-.login .left .card{
+.register .left .card{
     margin-left: 16%;
     padding: 3vw;
     padding-top: 3%;
@@ -43,11 +44,11 @@
     width: 50%;
 }
 
-.login .left .card .head{
+.register .left .card .head{
     font-size: 2.8em;
     font-weight: 600;
 }
-.login .left .card .subhead{
+.register .left .card .subhead{
     width: 110%;
     margin-top: 2vh;
     font-size: 1.1em;
@@ -56,16 +57,16 @@
 
 }
 
-.login .left .card .form form{
+.register .left .card .form form{
     margin-top: 4vh;
     display: flex;
     flex-direction: column;
 }
-.login .left .card .form label{
+.register .left .card .form label{
     margin-top: 2vh;
     font-size: 1.5em;
 }
-.login .left .card .form form input[type='text']{
+.register .left .card .form form input[type='text']{
     padding: 2%;
     font-size: 110%;
     color: #151515;
@@ -77,13 +78,13 @@
     height: 4vh;
     transition: all 0.3s ease-in;
 }
-.login .left .card .form form input[type='text']::placeholder{
+.register .left .card .form form input[type='text']::placeholder{
     color: #dddddd;
 }
-.login .left .card .form form input[type='text']:focus{
+.register .left .card .form form input[type='text']:focus{
     border: 2px solid #4a4a4a;
 }
-.login .left .card .form form input[type='submit']{
+.register .left .card .form form input[type='submit']{
     margin-top: 5vh;
     border-radius: 0.5em;
     height: 5vh;
@@ -94,30 +95,30 @@
     width: 125%;
     transition: all 0.3s ease-in;
 }
-.login .left .card .form form input[type='submit']:hover{
+.register .left .card .form form input[type='submit']:hover{
     background: var(--darker-blue);
 }
 
-.login .left .card .foot{
+.register .left .card .foot{
     width: 120%;
     margin-top: 5vh;
     font-size: 1em;
     font-weight: 500;
     color: #4a4a4a;
 }
-.login .left .card .foot a{
+.register .left .card .foot a{
     color: var(--yellow);
     text-decoration: none;
     transition: all 0.3s ease-in;
 }
-.login .left .card .foot a:hover{
+.register .left .card .foot a:hover{
     color: var(--dark-blue);
 }
 
 
 /* Right section begins here */
 
-.login .right{
+.register .right{
     background-color: var(--dark-blue);
     width: 50vw;
     height: 100vh;
