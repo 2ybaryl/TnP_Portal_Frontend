@@ -11,7 +11,7 @@ import ApplicationDashboard from './components/Routes/ApplicationDashboard';
 import AvailableJobs from './components/Routes/AvailableJobs';
 import PlacementPolicy from './components/Routes/PlacementPolicy';
 import Slogin from './components/Routes/Slogin';
-import Student from './components/Routes/Student';
+// import Student from './components/Routes/Student';
 import Sregister from './components/Routes/Sregister';
 import Tlogin from './components/Routes/Tlogin';
 
@@ -21,7 +21,10 @@ function App() {
     <Router>
       {/* <SideNav /> */}
     <Routes>
-                 <Route exact path='/' element={<Slogin/>}></Route>
+                 <Route exact path='/' element={<ApplicationDashboard/>}></Route>
+                 <Route exact path='/student/login' element={<Slogin/>}></Route>
+                 <Route exact path='/admin/login' element={<Tlogin/>}></Route>
+                 <Route exact path='/student/register' element={<Sregister/>}></Route>
                  <Route exact path='/jobs' element={<AvailableJobs/>}></Route>
                  <Route exact path='/resume' element={< Resume />}></Route>
                  <Route exact path='/policy' element={<PlacementPolicy/>}></Route>

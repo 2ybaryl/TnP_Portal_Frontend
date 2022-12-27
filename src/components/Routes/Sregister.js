@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../stylesheets/Sregister.css';
 
 export default class Sregister extends Component {
@@ -40,7 +41,7 @@ export default class Sregister extends Component {
             </div>
             <center>
               <div className="foot">
-                Already have an account? <a href="#">Sign in</a>
+                Already have an account? <Link to="/student/login">Sign in</Link>
               </div>
             </center>
           </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../stylesheets/Slogin.css";
 
 export default class Slogin extends Component {
@@ -33,7 +34,7 @@ export default class Slogin extends Component {
             </div>
             <center>
               <div className="foot">
-                Don't have an account yet? <a href="#">Sign Up</a>
+                Don't have an account yet? <Link to="/student/register">Sign Up</Link>
               </div>
             </center>
           </div>
