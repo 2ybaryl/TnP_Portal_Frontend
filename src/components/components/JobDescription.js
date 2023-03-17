@@ -24,7 +24,7 @@ import '../stylesheets/AvailableJobs.css'
                             <div className='tag' id = 'batch'>2024</div>
                             <div className='tag' id = 'type'>Fulltime</div>
                             <div className='tag' id = 'location'>Remote</div>
-                            <div className = 'tag' id='eligibility-tag'>CGPA > 8.0</div>
+                            <div className = 'tag' id='eligibility-tag'>CGPA &gt; 8.0</div>
                         </div>
                         
                         

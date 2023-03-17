@@ -1,7 +1,7 @@
 import React from "react";
 import '../stylesheets/ApplicationDashboard.css'
-import '../commons/SideNav'
-import SideNav from "../commons/SideNav";
+import '../components/SideNav'
+import SideNav from "../components/SideNav";
 class ApplicationDashboard extends React.Component {
     render() {
         return (

@@ -6,6 +6,8 @@
 :root{
     --dark-blue: #1d3557;
     --white : #f1faee;
+    --yellow: #f29d4a;
+    --darker-blue: #1d3577;
 }
 #SideNav{
     width: 20vw;

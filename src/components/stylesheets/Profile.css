@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --dark-blue: #1d3557;
+    --white : #f1faee;
+    --yellow: #f29d4a;
+    --darker-blue: #1d3577;
+}
+.main-section{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.main-section .left-section{
+    width: 20vw;
+}
+.main-section .right-section{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+.main-section .right-section .left{
+    margin-left: 4%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.main-section .right-section .left img{
+    height: 25%;
+    width: 155%;
+    border-radius: 50%;
+}
+.main-section .right-section .left .social{
+    margin-top: 20%;
+    width: 150%;
+    margin-left: 5%;
+    font-size: 1.2em;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+.main-section .right-section .left .social ul{
+    padding: 5%;
+    list-style-type: none;
+}
+.main-section .right-section .left .social ul li{
+    margin-bottom: 2%;
+}
+.main-section .right-section .left .buttons{
+    margin-top: 20%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.main-section .right-section .left .buttons button{
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.3em;
+    background: none;
+    border:  none;
+}
+.main-section .right-section .left .buttons #refresh{
+    padding: 8%;
+    margin-left: 10%;
+    border-radius: 0.5em;
+    transition: all 0.3s ease-in;
+    background: var(--dark-blue);
+}
+.main-section .right-section .left .buttons #refresh:hover{
+    background: var(--darker-blue);
+}
+
+.main-section .right-section .left .buttons #update{
+    padding: 8%;
+    border-radius: 0.5em;
+    margin-left: 12%;
+    transition: all 0.3s ease-in;
+    background: var(--dark-blue);
+}
+.main-section .right-section .left .buttons #update:hover{
+    background: var(--darker-blue);
+}

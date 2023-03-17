@@ -1,7 +1,7 @@
 import React from "react";
 import '../stylesheets/AvailableJobs.css'
-import SideNav from "../commons/SideNav";
-import JobDescription from "../commons/JobDescription";
+import SideNav from "../components/SideNav";
+import JobDescription from "../components/JobDescription";
 class AvailableJobs extends React.Component {
     render() {
        

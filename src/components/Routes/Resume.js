@@ -1,6 +1,6 @@
 import React from "react";
 import '../stylesheets/Resume.css'
-import SideNav from "../commons/SideNav";
+import SideNav from "../components/SideNav";
 class Resume extends React.Component {
     render() {
         return (

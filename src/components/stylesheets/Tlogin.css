@@ -27,10 +27,25 @@
 }
 
 .tlogin .left .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
     margin-left: 22%;
     font-size: 3em;
     font-weight: 700;
     margin-top: 15%;
+}
+
+.tlogin .left .heading button{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+}
+
+.tlogin .left .heading button span{
+    font-size: 0.5rem;
 }
 
 /* Card formation begins here */

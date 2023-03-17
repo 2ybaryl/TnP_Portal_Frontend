@@ -2,11 +2,12 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  Navigate
 } from 'react-router-dom';
 import Profile from './components/Routes/Profile';
 import Resume from './components/Routes/Resume';
-import SideNav from './components/commons/SideNav';
+import SideNav from './components/components/SideNav';
 import ApplicationDashboard from './components/Routes/ApplicationDashboard';
 import AvailableJobs from './components/Routes/AvailableJobs';
 import PlacementPolicy from './components/Routes/PlacementPolicy';
@@ -21,6 +22,7 @@ function App() {
     <Router>
       {/* <SideNav /> */}
     <Routes>
+                <Route exact path='*' element={<Navigate to='/' />}></Route>
                  <Route exact path='/' element={<ApplicationDashboard/>}></Route>
                  <Route exact path='/student/login' element={<Slogin/>}></Route>
                  <Route exact path='/admin/login' element={<Tlogin/>}></Route>
