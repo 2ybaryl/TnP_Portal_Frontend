@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom';
+import Slogin from '../Routes/Slogin';
+import Sregister from '../Routes/Sregister';
+import Tlogin from '../Routes/Tlogin';
 
 const PublicRoutes = (props) => {
     const pathArray = [
         {
             path: "/student/login",
-            //   component: <SignIn />
+              component: <Slogin />
         },
         {
             path: "/student/forgot",
@@ -17,11 +20,11 @@ const PublicRoutes = (props) => {
         },
         {
             path: "/student/register",
-            // component: <ResetPassword />
+            component: <Sregister />
         },
         {
             path: "/admin/login",
-            //   component: <SignIn />
+              component: <Tlogin />
         },
         {
             path: "/admin/forgot",
