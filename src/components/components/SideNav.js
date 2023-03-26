@@ -21,12 +21,12 @@ class SideNav extends React.Component {
                 <hr/>
                 <div className="navbar">
                     <ul>
-                        <li> <Link to="/"> <FontAwesomeIcon icon={solid('chart-line')} />   &nbsp;Dashboard</Link></li>
-                        <li> <Link to="/profile"> <FontAwesomeIcon icon={regular('user')} /> &nbsp;Profile</Link></li>
-                        <li> <Link to="/jobs"> <FontAwesomeIcon icon={solid('list')}/> &nbsp;Available Jobs</Link></li>
-                        <li> <Link to="/resume"> <FontAwesomeIcon icon={regular("pen-to-square")} /> &nbsp;Resume</Link></li>
-                        <li> <Link to="/policy"> <FontAwesomeIcon icon={regular("file-lines")} /> &nbsp;Placement Policy</Link></li>
-                        <li> <Link to="/"> <FontAwesomeIcon icon={solid("arrow-right-from-bracket")} /> &nbsp;Log Out</Link></li>
+                        <li> <Link to="/"> <FontAwesomeIcon icon={solid('chart-line')} />   &nbsp;&nbsp;Dashboard</Link></li>
+                        <li> <Link to="/profile"> <FontAwesomeIcon icon={regular('user')} /> &nbsp;&nbsp;Profile</Link></li>
+                        <li> <Link to="/jobs"> <FontAwesomeIcon icon={solid('list')}/> &nbsp;&nbsp;Available Jobs</Link></li>
+                        <li> <Link to="/resume"> <FontAwesomeIcon icon={regular("pen-to-square")} /> &nbsp;&nbsp;Resume</Link></li>
+                        <li> <Link to="/policy"> <FontAwesomeIcon icon={regular("file-lines")} /> &nbsp;&nbsp;Placement Policy</Link></li>
+                        <li> <Link to="/"> <FontAwesomeIcon icon={solid("arrow-right-from-bracket")} /> &nbsp;&nbsp;Log Out</Link></li>
                     </ul>
                 </div>
                 
@@ -40,7 +40,7 @@ class SideNav extends React.Component {
                         <h4>John Doe</h4>
                         <p>veryrandom@mail.com</p>
                     </div>
-                    <p className="logout"> <Link to="/"> <FontAwesomeIcon icon={solid("arrow-right-from-bracket")} /></Link></p>
+                    {/* <p className="logout"> <Link to="/"> <FontAwesomeIcon icon={solid("arrow-right-from-bracket")} /></Link></p> */}
                 </div>
             </section>
         );
