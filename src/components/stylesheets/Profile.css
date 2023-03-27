@@ -15,7 +15,7 @@
     flex-direction: row;
 }
 .main-section .left-section{
-    width: 20vw;
+width: auto;
 }
 .main-section .right-section{
     width: 80vw;

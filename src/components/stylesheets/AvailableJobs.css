@@ -19,9 +19,10 @@
 }
 #JobDescription{
    
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+
 }
 .jdw{
     margin-right: auto;
@@ -41,7 +42,7 @@
     justify-content: center;
 }
 .Company-logo img{
-    height: 100px;
+    height: 10vh;
 }
 .Job-head{
    
@@ -50,10 +51,10 @@
     justify-content: center;
 }
 .Job-title{
-    font-size: 135%;
+    font-size: 1.1vw;
 }
 .Company-title{
-    font-size: 110%;
+    font-size: 0.9vw;
     margin-top: 2%;
     color: rgb(177, 177, 177);
 }
@@ -64,8 +65,7 @@
     justify-content: space-between;
     padding-right: 5%;
     padding-left: 1%;
-  
-    width: 50vw;
+    width: 60vw;
    
   
     font-weight: 300;
@@ -79,14 +79,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 125%;
+    font-size: 1vw;
 }
 .job-role{
     padding-left: 5%;
     
     margin: 2px;
     margin-top: none;
-    font-size: 100%;
+    font-size: 0.9vw;
     word-wrap:normal;
 }
 
@@ -98,6 +98,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 0.99vw;
 }
 .job-tags-2{
     margin-left: 5%;
@@ -111,7 +112,7 @@
 .job-salary{
     font-weight: 600;
     display: flex;
-    font-size: 110%;
+    font-size: 1vw;
     flex-direction: column;
     justify-content: center;
     color: #1d3557;
@@ -124,7 +125,7 @@
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 100%;
+    font-size: 1vw;
     cursor: pointer;
 }
 .job-apply button:hover{
@@ -134,7 +135,7 @@
     background-color: #FAAA55;
     text-align: center;
     width: 20%;
-    padding: 2%;
+    padding: 1.5%;
     margin-top: auto;
     border-radius: 5px;
     font-weight: 500;
@@ -155,7 +156,7 @@
     text-align: center;
 }
 .hidden{
-    width: 50vw;
+    width: 60vw;
     padding: 20px;
     padding-top: 0px;
     font-size: 17px;
@@ -182,7 +183,7 @@
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
-    font-size: 120%;
+    font-size: 1vw;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -193,5 +194,5 @@
 }
 .showDetails:hover{
     color: #3154b4;
-    transition:  0.2s ease 0s;
+    transition:  1s ease 0.1s;
 }

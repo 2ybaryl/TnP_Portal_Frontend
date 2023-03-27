@@ -40,11 +40,11 @@
 
     padding: 20px;
     padding-left: 2%;
-    font-size: 120%;
+    font-size: 1.2vw;
 }
 hr{
     background-color: rgb(212, 210, 210);
-    height: 0.08px;
+    height: 0.05vw;
     opacity: 0.2;
     border: none;
 }
@@ -60,7 +60,7 @@ hr{
   font-size: 18px;
 }
 .navbar ul li{
-    font-size: 80%;
+    font-size: 0.9vw;
     cursor: pointer;
     padding: 4.2%;
     margin: 2%;
@@ -94,10 +94,10 @@ hr{
     font-style: normal;
 }
 .uc-right h4{
-    font-size: 90%;
+    font-size: 0.9vw;
 }
 .uc-right p {
-    font-size: 80%;
+    font-size: 0.8vw;
 }
 .fade{
     opacity: 0.1;
