@@ -23,6 +23,7 @@
     background-color: white;
     flex: 1;
     margin: 1vw;
+    margin-top: 5.5vw;
     box-shadow: rgba(9, 30, 66, 0.10) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
@@ -62,7 +63,7 @@
     padding-left: 0.9vw;
     padding-right: 0.9vw;
     font-size: 0.9vw;
-    background-color: #1d3577;
+    background-color: var(--dark-blue);
     color: white;
 }
 #search-icon{
@@ -110,6 +111,8 @@
     height:  5vh;
     width: 5vh;
     margin: 1vh;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
 }
 .Job-head{
     display: flex;
@@ -139,13 +142,16 @@
 .jdw-top-left{
     display: flex;
     flex-direction: row;
+    flex: 2;
 }
 .Job-status{
+    flex: 1.5;
     color: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 0.9vw;
+    align-items: left;
 }
 .job-role{
     margin: 2px;
@@ -271,20 +277,16 @@
 .some-box{
     display: flex;
     flex-direction: column;
-    background-color: rebeccapurple;
+   
 }
 .job-filters{
     flex: 1;
-    background-color: red;
 }
-.job-metrics{
-    flex: 1;
-}
+
 .filter{
-    background-color: yellow;
-    padding: 0.4vw;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding: 0.5vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
 }
 #filter-head{
     font-size: 1vw;
@@ -295,4 +297,11 @@
 }
 .MuiTypography-body1 {
     font-size: 0.9vw !important;
+}
+.filter h4{
+    font-size: 1vw;
+    padding-left: 0.2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    font-weight: 500;
 }

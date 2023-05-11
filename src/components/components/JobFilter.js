@@ -4,10 +4,16 @@ import {
   FormControl,
   FormControlLabel,
   Checkbox,
+  Slider,
   Typography,
   FormGroup,
   Divider,
 } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSort
+} from "@fortawesome/free-solid-svg-icons";
+
 
 const Filter = () => {
   const [location, setLocation] = useState({
@@ -19,6 +25,11 @@ const Filter = () => {
     internship: false,
     fta: false,
   });
+  const [cgpaValue, setCgpaValue] = useState(0);
+
+  const handleCgpaChange = (event, newValue) => {
+    setCgpaValue(newValue);
+  };
 
   const handleLocationChange = (event) => {
     setLocation({ ...location, [event.target.name]: event.target.checked });
@@ -30,8 +41,8 @@ const Filter = () => {
 
   return (
     <div className='filter'>
-
-      <Typography variant="h6" id = "filter-head">Location</Typography>
+      <h4>Filters <FontAwesomeIcon icon={faSort} /></h4>
+      <Typography variant="h6" id = "filter-head" className='add-padding'>Location</Typography>
       <Divider />
       <FormControl component="fieldset">
         <FormGroup>
@@ -44,7 +55,7 @@ const Filter = () => {
                 color="primary"
               />
             }
-            label="Onsite"
+            label="Onsite" 
           />
           <FormControlLabel
             control={
@@ -88,6 +99,78 @@ const Filter = () => {
           />
         </FormGroup>
       </FormControl>
+      <br/>
+      <Typography variant="h6" id = "filter-head">Batch</Typography>
+      <Divider />
+      <FormControl component="fieldset">
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <Checkbox id = "filter-head"
+                checked={jobType.internship}
+                onChange={handleJobTypeChange}
+                name="2023"
+                color="primary"
+              />
+            }
+            label="Class of 2023"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox id = "filter-head"
+                checked={jobType.fta}
+                onChange={handleJobTypeChange}
+                name="2024"
+                color="primary"
+              />
+            }
+            label="Class of 2024" 
+          />
+        </FormGroup>
+      </FormControl>
+      <Typography variant="h6" id = "filter-head">Batch</Typography>
+      <Divider />
+      <FormControl component="fieldset">
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <Checkbox id = "filter-head"
+                checked={jobType.internship}
+                onChange={handleJobTypeChange}
+                name="2023"
+                color="primary"
+              />
+            }
+            label="Class of 2023"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox id = "filter-head"
+                checked={jobType.fta}
+                onChange={handleJobTypeChange}
+                name="2024"
+                color="primary"
+              />
+            }
+            label="Class of 2024" 
+          />
+        </FormGroup>
+      </FormControl>
+      <br/>
+      <Typography className="cgpa-slider" id = "filter-head" variant="h6" gutterBottom>
+        Required CGPA
+      </Typography>
+      <Slider
+        value={cgpaValue}
+        onChange={handleCgpaChange}
+        min={0}
+        max={10}
+        step={0.1}
+        aria-labelledby="cgpa-slider"
+      />
+      <Typography variant="body2" gutterBottom>
+        CGPA: {cgpaValue}
+      </Typography>
     </div>
   );
 };

@@ -180,7 +180,7 @@ function Award(props) {
           </div>
         </div>
       </div>
-      <div id="honors" className='awards-sub-sec'>
+      {/* <div id="honors" className='awards-sub-sec'>
         <div id="honors-lft" className='awards-ssl'></div>
         <div id="honors-rgt" className='awards-ssr'></div>
       </div>
@@ -191,7 +191,7 @@ function Award(props) {
       <div id="patents" className='awards-sub-sec'>
         <div id="patents-lft" className='awards-ssl'></div>
         <div id="patents-rgt" className='awards-ssr'></div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -297,12 +297,16 @@
   }
 .view-more{
     
+    color: #1d3557!important;
     font-weight: 600;
     align-items: right;
     text-align: right;
     margin-top: 15px;
     font-size: 0.9vw;
     
+}
+.view-more a{
+  color: #1d3557!important;
 }
 .recently-added a{
     text-decoration: none;
