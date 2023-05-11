@@ -12,6 +12,12 @@ import ApplicationDashboard from './components/Routes/ApplicationDashboard';
 import AvailableJobs from './components/Routes/AvailableJobs';
 import PlacementPolicy from './components/Routes/PlacementPolicy';
 import Slogin from './components/Routes/Slogin';
+import About from './components/components/Student-Profile/About';
+import Award from './components/components/Student-Profile/Award';
+import Education from './components/components/Student-Profile/Education';
+import Experience from './components/components/Student-Profile/Experience';
+import Project from './components/components/Student-Profile/Project';
+
 // import Student from './components/Routes/Student';
 import Sregister from './components/Routes/Sregister';
 import Tlogin from './components/Routes/Tlogin';
@@ -30,7 +36,14 @@ function App() {
                  <Route exact path='/jobs' element={<AvailableJobs/>}></Route>
                  <Route exact path='/resume' element={< Resume />}></Route>
                  <Route exact path='/policy' element={<PlacementPolicy/>}></Route>
-                 <Route exact path='/profile' element={< Profile />}></Route>
+                 <Route exact path='/profile' element={< Profile />}>
+                      <Route exact path='about' element={<About/>}></Route>
+                      <Route exact path='projects' element={<Project/>}></Route>
+                      <Route exact path='education' element={< Education />}></Route>
+                      <Route exact path='experiences' element={<Experience/>}></Route>
+                      <Route exact path='awards' element={< Award />}></Route>
+                 </Route>
+                
     </Routes>
     </Router>
     </>

@@ -1,194 +1,115 @@
 import React from "react";
 import "../stylesheets/Profile.css";
 import DashboardLayout from "../../layouts/Dashboard/DashboardLayout";
-import { Link } from "react-router-dom";
+import TopNav from "../components/TopNav";
+import { BrowserRouter as Router, Switch, Route, Outlet, Link } from "react-router-dom";
+import About from "../components/Student-Profile/About";
+import Education from "../components/Student-Profile/Education";
+import Projects from "../components/Student-Profile/Project";
+import Experience from "../components/Student-Profile/Experience";
+import Awards from "../components/Student-Profile/Award";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAnglesRight, faArrowUpRightFromSquare, faPhone, faEnvelope, faAddressBook, faLocationDot
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faTwitter, faLinkedin, faFigma } from '@fortawesome/free-brands-svg-icons';
+
+const about = "Hi, I'm a third-year student pursuing a Bachelor's degree in Computer Science and Engineering. I'm passionate about programming, algorithms, and data structures. In the past, I've worked on various projects related to web development, mobile app development, and machine learning.";
+const trimmedAboutText = about.slice(0, 200) + "...";
+const skills = ['React', 'JavaScript', 'HTML', 'CSS', 'Redux', 'Node.js', 'Webpack', 'Java'];
+const SkillCard = ({ skill }) => {
+  return (
+    <div id="skill-card">{skill}</div>
+  );
+};
+
+
 class Profile extends React.Component {
+  
   render() {
     return (
-      <>
-        <DashboardLayout>
-          {/* Profile header Welcome Message */}
-          <div className="profile-header">
-            <span className="head">Welcome to your Profile</span>
-            <span className="sub-head">
-              You can edit and add fields to your profile to increase your
-              chances of being recruited. This profile will also be used to
-              generate a Resume for you in the{" "}
-              <Link to="/resume">Resume Section</Link>.
-            </span>
+
+      <DashboardLayout>
+        <TopNav />
+        <div className="profile-container">
+          <div className="profile-heading">
+            <h3>Profile</h3>
+            <h5>&nbsp;You can edit and add fields to your profile to increase your chances of being recruited.</h5>
           </div>
-          <div className="profile-body">
-            {/* Profile Image section */}
-            <div className="general">
-              <div className="pfp">
-                <div className="pfp-body">
-                  <img src="https://images.unsplash.com/photo-1676044980901-bf50cc624273?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1145&q=80" />
-                  <div className="pfp-buttons">
-                    <button type="upload">Upload New</button>
-                    <button type="delete">Delete Image</button>
-                  </div>
-                </div>
-                <span>
-                  For best results, upload image with 1:1 Aspect Ratio.
-                </span>
-              </div>
-            </div>
-            <div className="general-info">
-              <div className="info">
-                <span>General Information</span>
-                <div className="input-group">
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Name"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Enrollment Number</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Enrollment Number"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Branch</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Current Year"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Current Semester</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Current Semester"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Date of Birth</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Date of Birth"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Gender</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Gender"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Nationality</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Nationality"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Contact Number</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Contact Numberr"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Email ID</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Email ID"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Father's Name</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Father's Name"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Father's Occupation</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Occupation"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Mother's Name</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Mother's Name"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Mother's Occupation</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Occupation"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="input-group">
-                  <label>Permanent Address</label>
-                  <input
-                    type="text"
-                    name="firstname"
-                    placeholder="Enter Permanent Address"
-                    autoComplete="off"
-                  />
-                </div>
-              </div>
-              <div className="social">
-                Social Media Links
+          <div className="profile-sub-container">
+            <div className="profile-category">
+              <div id="profile-sub" className="profile-category-nav">
                 <ul>
-                  <li>Twitter - <input type='text'/></li>
-                  <li>LinkedIn</li>
-                  <li>GitHub</li>
-                  <li>Portfolio</li>
-                  <li>Dribble</li>
-                  <li>Behance</li>
+                  <li><Link to="/profile/about">About</Link></li>
+                  <li><Link to="/profile/education">Education</Link></li>
+                  <li><Link to="/profile/projects">Projects</Link></li>
+                  <li><Link to="/profile/experiences">Experience</Link></li>
+                  <li><Link to="/profile/awards">Awards</Link></li>
                 </ul>
               </div>
+              <div className="profile-category-body">
+                <Outlet />
+              </div>
             </div>
-            <div className="buttons">
-              <button id="refresh">Refresh</button>
-              <button id="update">Update</button>
+            <div id="profile-sub" className="profile-right-nav">
+              <div id="profile-right-nav-top">
+                <div id="profile-pic-small">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" ></img></div>
+              </div>
+              <div id="profile-right-nav-mid">
+                <div id="basic-info">
+
+                  <h4 id="name">Krati Jain</h4>
+                  <h5 id="er-no"> 201B137 </h5>
+                  <p id="tagline"> Junior Year student pursuing B.tech in Computer Science & Engineering.</p>
+                  <div id="socials">
+                    <ul id="socials-icons">
+                      <li id="s1"><FontAwesomeIcon icon={faGithub} /></li>
+                      <li><FontAwesomeIcon icon={faTwitter} /></li>
+                      <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                      <li><FontAwesomeIcon icon={faFigma} /></li>
+                    </ul>
+                    <button id="personal-website">Website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
+                  </div>
+                </div>
+                <div id="contact-info">
+                  <h4>Contact Information</h4>
+                  <div className="contact-container">
+                    <h5> <FontAwesomeIcon icon={faPhone} /> Phone </h5>
+                    <h6>+91 700 744 0611</h6>
+                  </div>
+                  <div className="contact-container">
+                    <h5> <FontAwesomeIcon icon={faEnvelope} /> Email</h5>
+                    <h6>iamkrati22@gmail.com</h6>
+                  </div>
+                  <div className="contact-container">
+                    <h5><FontAwesomeIcon icon={faLocationDot} /> Address </h5>
+                    <h6>242/3 Yahiya Ganj, Lucknow</h6>
+                  </div>
+                </div>
+
+              </div>
+              <div id="profile-right-nav-btm">
+                <div id="about-info">
+                  <h4>About</h4>
+                  <p>
+                    {trimmedAboutText} <Link to = "/" id = "read-more">Read More</Link >
+                  </p>
+                </div>
+                <div id="skills-info">
+                  <h4>Skills </h4>
+                  <div id="skill-cards">
+                    {skills.map(skill => (
+                      <SkillCard skill={skill} key={skill} />
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="right">
-            <input type="text" value="Name" readOnly />
-            <input type="text" value="Er No" readOnly />
-            <input type="text" value="Year" readOnly />
-            <input type="text" value="branch" readOnly />
-            <input type="text" value="Current CGPA" readOnly />
-          </div>
-        </DashboardLayout>
-      </>
+        </div>
+      </DashboardLayout>
+
     );
   }
 }

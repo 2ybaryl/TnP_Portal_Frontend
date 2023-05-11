@@ -10,31 +10,95 @@
     --darker-blue: #1d3577;
 }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500&display=swap');
-.aj .right-section{
+
+.aj .profile-heading {
+    margin-left: 1vw;
+    flex: 0;
+}
+.job-page-container{
+    display: flex;
+    height: 100vh;
+}
+.some-box{
+    background-color: white;
+    flex: 1;
+    margin: 1vw;
+    box-shadow: rgba(9, 30, 66, 0.10) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.job-page{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw ;
+    flex: 4;
+}
+.search-box{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: 1px solid var(grey);
+    display: flex;
+    flex-direction: row;
+    flex: 0.6;
+    justify-content: center;
+}
+.search-box input{
+    height: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 50%;
+    padding: 0.3vw;
+    border-radius: 6px;
+    border: 1px solid rgb(207, 205, 205);
+}
+.search-box button{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    margin-left: 0.8vw;
+    border-radius: 0.4vw;
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 2vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    padding-left: 0.9vw;
+    padding-right: 0.9vw;
+    font-size: 0.9vw;
+    background-color: #1d3577;
+    color: white;
+}
+#search-icon{
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+.job-container{
+    flex: 6;
+}
+.aj {
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #F9FBFC;
 }
+
 #JobDescription{
    
     width: 100%;
     display: flex;
     justify-content: center;
-
-}
-.jdw{
     margin-right: auto;
     margin-left: auto;
+}
+.jdw{
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 15px;
+    border-radius: 0.2vw;
     background: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 5px 0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+
 }
 .Company-logo{
     display: flex;
@@ -42,21 +106,23 @@
     justify-content: center;
 }
 .Company-logo img{
-    height: 10vh;
+   
+    height:  5vh;
+    width: 5vh;
+    margin: 1vh;
 }
 .Job-head{
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .Job-title{
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 .Company-title{
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     margin-top: 2%;
-    color: rgb(177, 177, 177);
+    color: rgb(114, 114, 114);
 }
 .jdw-top{
     color: black;
@@ -65,9 +131,9 @@
     justify-content: space-between;
     padding-right: 5%;
     padding-left: 1%;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
     width: 60vw;
-   
-  
     font-weight: 300;
 }
 .jdw-top-left{
@@ -79,14 +145,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 .job-role{
-    padding-left: 5%;
-    
     margin: 2px;
     margin-top: none;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
     word-wrap:normal;
 }
 
@@ -94,11 +162,11 @@
     flex: 2;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    font-size: 0.99vw;
+    justify-content: flex-start;
+    height: 2vw;
 }
 .job-tags-2{
     margin-left: 5%;
@@ -112,40 +180,44 @@
 .job-salary{
     font-weight: 600;
     display: flex;
-    font-size: 1vw;
+    font-size: 0.85vw;
     flex-direction: column;
     justify-content: center;
     color: #1d3557;
 }
 .job-apply button{
     background-color: #1d3557;
-    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 5px 0px;
-    border-radius: 7px;
-    padding: 7px 25px;
+    border-radius: 0.2vw;
+    border: none;
+    height: 2vw;
+    width: 7vw;
     color: #FFFFFF;
+    padding-left: 1vw;
+    padding-right: 1vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 0.8vw;
     cursor: pointer;
 }
 .job-apply button:hover{
     background-color: #1d3577;
 }
 .tag{
-    background-color: #FAAA55;
-    text-align: center;
-    width: 20%;
-    padding: 1.5%;
-    margin-top: auto;
-    border-radius: 5px;
-    font-weight: 500;
+    margin-top: 0.1vw !important;
+    margin: 1vw;
+    margin-left: 2vw !important;
     background-color: #F9FBFC;
-    box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 3px;
-    box-shadow: rgba(0, 0, 0, 0.18) 1px 1px 3px 0px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 1px;
-
-    
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    text-align: center;
+    width: 5vw;
+    border-radius: 5px;
+    height: 2vw;
+    font-weight: 500;
+    font-size: 0.7vw;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .eligibility-tag{
@@ -156,7 +228,7 @@
     text-align: center;
 }
 .hidden{
-    width: 60vw;
+    width: 100%;
     padding: 20px;
     padding-top: 0px;
     font-size: 17px;
@@ -183,7 +255,7 @@
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -195,4 +267,32 @@
 .showDetails:hover{
     color: #3154b4;
     transition:  1s ease 0.1s;
+}
+.some-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+}
+.job-filters{
+    flex: 1;
+    background-color: red;
+}
+.job-metrics{
+    flex: 1;
+}
+.filter{
+    background-color: yellow;
+    padding: 0.4vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+#filter-head{
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+.MuiFormControlLabel-root{
+    font-size: 0.95vw !important;
+}
+.MuiTypography-body1 {
+    font-size: 0.9vw !important;
 }

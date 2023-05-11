@@ -21,48 +21,48 @@ const SideNav = () => {
       <div className="navbar">
         <ul>
           <li>
-            {" "}
+
             <Link to="/">
-              {" "}
+
               <FontAwesomeIcon icon={solid("chart-line")} />{" "}
               &nbsp;&nbsp;Dashboard
             </Link>
           </li>
           <li>
-            {" "}
+
             <Link to="/profile">
-              {" "}
+
               <FontAwesomeIcon icon={regular("user")} /> &nbsp;&nbsp;Profile
             </Link>
           </li>
           <li>
-            {" "}
+
             <Link to="/jobs">
-              {" "}
+
               <FontAwesomeIcon icon={solid("list")} /> &nbsp;&nbsp;Available
               Jobs
             </Link>
           </li>
           <li>
-            {" "}
+
             <Link to="/resume">
-              {" "}
+
               <FontAwesomeIcon icon={regular("pen-to-square")} />{" "}
               &nbsp;&nbsp;Resume
             </Link>
           </li>
           <li>
-            {" "}
+
             <Link to="/policy">
-              {" "}
+
               <FontAwesomeIcon icon={regular("file-lines")} />{" "}
               &nbsp;&nbsp;Placement Policy
             </Link>
           </li>
           <li>
-            {" "}
+
             <Link to="/">
-              {" "}
+
               <FontAwesomeIcon icon={solid("arrow-right-from-bracket")} />{" "}
               &nbsp;&nbsp;Log Out
             </Link>

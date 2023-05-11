@@ -22,7 +22,7 @@ import '../stylesheets/AvailableJobs.css'
                         
                         <div className='job-tags'>
                             <div className='tag' id = 'batch'>2024</div>
-                            <div className='tag' id = 'type'>Fulltime</div>
+                            <div className='tag' id = 'type'>Full Time</div>
                             <div className='tag' id = 'location'>Remote</div>
                             <div className = 'tag' id='eligibility-tag'>CGPA &gt; 8.0</div>
                         </div>
@@ -38,7 +38,7 @@ import '../stylesheets/AvailableJobs.css'
                   <div className="jdw-top">
                         <div className='jdw-top-left'>
                             <div className='Company-logo'>
-                                <img src = "https://cdn.dribbble.com/users/121337/screenshots/5885287/slack.png?compress=1&resize=400x300"></img>
+                                <img src = "ddhttps://cdn.dribbble.com/users/121337/screenshots/5885287/slack.png?compress=1&resize=400x300"></img>
                             </div>
                             <div className='Job-head'>
                                 <h3 className="Job-title">Junior UI/UX Designer</h3>
