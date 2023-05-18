@@ -19,6 +19,9 @@ import Experience from './components/components/Student-Profile/Experience';
 import Project from './components/components/Student-Profile/Project';
 import JobDetails from "./components/Routes/JobDetails";
 
+//Admin 
+import AdminDashboard from './components/Routes/AdminDashboard';
+
 // import Student from './components/Routes/Student';
 import Sregister from './components/Routes/Sregister';
 import Tlogin from './components/Routes/Tlogin';
@@ -37,6 +40,7 @@ function App() {
                  <Route exact path='/jobs' element={<AvailableJobs/>}>
                       {/* <Route exact path='id' element={<About/>}></Route> */}
                  </Route>
+                 <Route exact path='/admin' element={<AdminDashboard/>}></Route>
                  <Route exact path='/job-details' element={<JobDetails />}></Route>
                  <Route exact path='/resume' element={< Resume />}></Route>
                  <Route exact path='/policy' element={<PlacementPolicy/>}></Route>

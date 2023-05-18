@@ -77,10 +77,12 @@
 #add-more-skills input{
     border: 1px solid var(--darker-blue);
     height: 1.4vw;
+    width: 15vw !important;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 15px 0px 0px 15px;
-    text-align: center;   
+    text-align: left; 
+    padding-left: 1vw;  
 }
 input:focus {
     outline: none;
