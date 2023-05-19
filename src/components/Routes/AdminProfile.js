@@ -1,13 +1,18 @@
 import React from "react";
 import '../stylesheets/AdminProfile.css'
-import SideNav from "../components/SideNav";
+import AdminSideNav from "../components/AdminSideNav";
 import TopNav from "../components/TopNav";
 import DashboardLayout from "../../layouts/Dashboard/DashboardLayout";
 class AdminProfile extends React.Component {
     render() {
         return (
-            <DashboardLayout>
-                <TopNav />
+            <div className="r">
+                <div className="main-section">
+                    <div className="left-section">
+                        <AdminSideNav />
+                    </div>
+                    <div className="right-section">
+                    <TopNav />
                 <div className="profile-container">
                     <div className="profile-heading">
                         <h3>Profile</h3>
@@ -43,8 +48,12 @@ class AdminProfile extends React.Component {
                             
                         </div>
                     </div>
+                </div> 
+                    </div>
                 </div>
-            </DashboardLayout>
+            </div>
+                
+           
         );
     }
 }

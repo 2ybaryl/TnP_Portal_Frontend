@@ -22,6 +22,8 @@ import JobDetails from "./components/Routes/JobDetails";
 //Admin 
 import AdminDashboard from './components/Routes/AdminDashboard';
 import AdminProfile from './components/Routes/AdminProfile';
+import CreateJobs from './components/Routes/CreateJobs';
+import EditPolicy from './components/Routes/EditPolicy';
 
 // import Student from './components/Routes/Student';
 import Sregister from './components/Routes/Sregister';
@@ -44,11 +46,14 @@ function App() {
                  </Route>
                  <Route exact path='/admin' element={<AdminDashboard/>}></Route>
                  <Route exact path='/admin-profile' element={<AdminProfile/>}></Route>
+                 <Route exact path='/edit-policy' element={<EditPolicy/>}></Route>
+                 <Route exact path='/create-jobs' element={<CreateJobs/>}></Route>
+
                  <Route exact path='/job-details' element={<JobDetails />}></Route>
                  <Route exact path='/resume' element={< Resume />}></Route>
                  <Route exact path='/policy' element={<PlacementPolicy/>}></Route>
                  <Route exact path='/profile' element={< Profile />}>
-                      <Route exact path='about' element={<About/>}></Route>
+                      <Route exact path='' element={<About/>}></Route>
                       <Route exact path='projects' element={<Project/>}></Route>
                       <Route exact path='education' element={< Education />}></Route>
                       <Route exact path='experiences' element={<Experience/>}></Route>

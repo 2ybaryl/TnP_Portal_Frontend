@@ -1,7 +1,7 @@
 import React from "react";
 import "../stylesheets/AdminDashboard.css";
 import "../components/SideNav";
-import SideNav from "../components/SideNav";
+import AdminSideNav from "../components/AdminSideNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare, faBriefcase, faClock } from "@fortawesome/free-solid-svg-icons";
 import TopNav from "../components/TopNav";
@@ -130,7 +130,7 @@ class AdminDashboard extends React.Component {
             <div className="admin-dashboard">
               <div className="main-section">
                     <div className="left-section">
-                        <SideNav />
+                        <AdminSideNav />
                     </div>
                     <div className="right-section">
                         <TopNav/>
