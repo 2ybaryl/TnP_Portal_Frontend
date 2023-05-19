@@ -21,10 +21,12 @@ import JobDetails from "./components/Routes/JobDetails";
 
 //Admin 
 import AdminDashboard from './components/Routes/AdminDashboard';
+import AdminProfile from './components/Routes/AdminProfile';
 
 // import Student from './components/Routes/Student';
 import Sregister from './components/Routes/Sregister';
 import Tlogin from './components/Routes/Tlogin';
+
 
 function App() {
   return (
@@ -41,6 +43,7 @@ function App() {
                       {/* <Route exact path='id' element={<About/>}></Route> */}
                  </Route>
                  <Route exact path='/admin' element={<AdminDashboard/>}></Route>
+                 <Route exact path='/admin-profile' element={<AdminProfile/>}></Route>
                  <Route exact path='/job-details' element={<JobDetails />}></Route>
                  <Route exact path='/resume' element={< Resume />}></Route>
                  <Route exact path='/policy' element={<PlacementPolicy/>}></Route>

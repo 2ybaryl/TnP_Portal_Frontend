@@ -1,26 +1,16 @@
 import React from "react";
-import "../stylesheets/ApplicationDashboard.css";
+import "../stylesheets/AdminDashboard.css";
 import "../components/SideNav";
 import SideNav from "../components/SideNav";
-import RecentlyAdded from "../components/RecentlyAdded";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
-import { PieChart, Pie, Cell, Legend, Label, Line } from "recharts";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
-import JobHistory from "../components/JobHistory";
+import { faCheckSquare, faBriefcase, faClock } from "@fortawesome/free-solid-svg-icons";
 import TopNav from "../components/TopNav";
 import SingleLineChart from "../components/graphs/LineChart";
-import PlacementPackagesChart from "../components/graphs/ScatterChart";
 import PieChartComponent from "../components/graphs/PieChart";
+import PlacementTable from "../components/PlacementTable";
 
-const data = [
-    { date: '2023-01-01', 'Package A': 10, 'Package B': 5, 'Package C': 15 },
-    { date: '2023-02-01', 'Package A': 8, 'Package B': 12, 'Package C': 10 },
-    { date: '2023-03-01', 'Package A': 15, 'Package B': 10, 'Package C': 8 },
-    // ...
-  ];
 
-  const data2 = [
+  const lineChartData = [
     { package: '10', students: 8 },
     { package: '6', students: 15 },
     { package: '12', students: 6 },
@@ -31,60 +21,152 @@ const data = [
     { package: '9', students: 9 },
     { package: '7', students: 14 },
     { package: '11', students: 7 },
-    // Add more entries...
   ];
-  const data3 = [
+  const pieChartData = [
     { name: 'Placed', value: 12 },
     { name: 'Seeking Placement', value: 25 },
     { name: 'Not Actively Looking', value: 21 },
   ];
  
+  const studentsData = [
+    {
+      name: 'John Doe',
+      rollNumber: '2021001',
+      branch: 'CSE',
+      company: 'ABC Corp',
+      offers: 3,
+      status: 'Placed',
+      package: '$100,000',
+    },
+    {
+      name: 'Jane Smith',
+      rollNumber: '2021002',
+      branch: 'MEC',
+      company: 'XYZ Inc',
+      offers: 2,
+      status: 'Placed',
+      package: '$90,000',
+    },
+    {
+      name: 'Alice Johnson',
+      rollNumber: '2021003',
+      branch: 'CHEM',
+      company: 'PQR Ltd',
+      offers: 1,
+      status: 'Placed',
+      package: '$80,000',
+    },
+    {
+      name: 'Michael Brown',
+      rollNumber: '2021004',
+      branch: 'CSE',
+      company: 'LMN Corp',
+      offers: 4,
+      status: 'Placed',
+      package: '$110,000',
+    },
+    {
+      name: 'Emily Davis',
+      rollNumber: '2021005',
+      branch: 'MEC',
+      company: 'UVW Inc',
+      offers: 2,
+      status: 'Seeking Placement',
+      package: '$0',
+    },
+    {
+      name: 'David Wilson',
+      rollNumber: '2021006',
+      branch: 'CHEM',
+      company: 'OPQ Ltd',
+      offers: 3,
+      status: 'Seeking Placement',
+      package: '$0',
+    },
+    {
+      name: 'Sophia Taylor',
+      rollNumber: '2021007',
+      branch: 'CSE',
+      company: 'RST Corp',
+      offers: 1,
+      status: 'Not Looking',
+      package: '$0',
+    },
+    {
+      name: 'Daniel Anderson',
+      rollNumber: '2021008',
+      branch: 'MEC',
+      company: 'FGH Inc',
+      offers: 2,
+      status: 'Seeking Placement',
+      package: '$0',
+    },
+    {
+      name: 'Olivia Clark',
+      rollNumber: '2021009',
+      branch: 'CHEM',
+      company: 'IJK Ltd',
+      offers: 1,
+      status: 'Placed',
+      package: '$70,000',
+    },
+    {
+      name: 'James Johnson',
+      rollNumber: '2021010',
+      branch: 'CSE',
+      company: 'LMN Corp',
+      offers: 3,
+      status: 'Placed',
+      package: '$95,000',
+    },
+    // Add more student objects here...
+  ];
+  
   
   
 class AdminDashboard extends React.Component {
     render() {
         return (
             <div className="admin-dashboard">
-                <div className="main-section">
+              <div className="main-section">
                     <div className="left-section">
                         <SideNav />
                     </div>
                     <div className="right-section">
-                        <TopNav />
+                        <TopNav/>
                         <div className="dashboard-mc">
                             <div className="metrics">
                                 <div className="metrics-heading">
                                     <h3>Dashboard</h3>
-                                    <h5>
-                                        &nbsp;Empowering efficient placement management through comprehensive data insights
-                                    </h5>
+                                    <h5>&nbsp;Empowering efficient placement management through comprehensive data insights</h5>
                                 </div>
                                 <div className="metrics-cards">
                                     <div className="metric-card" id="metric-card-1">
                                         <div className="mc-1" id="applied">
                                             <div className="mc-1-icon">
-                                                <FontAwesomeIcon class="fai" icon={faCheckSquare} />
+                                                <FontAwesomeIcon class="fai" icon={faBriefcase} />
                                             </div>
                                             <div className="mc-1-metric">32</div>
-                                            <div className="mc-1-name">Students Placed</div>
+                                            <div className="mc-1-name">Jobs Active</div>
                                         </div>
                                         <div className="mc-1" id="in-progress">
                                             <div className="mc-1-icon">
-                                                <FontAwesomeIcon class="fai" icon={faVideo} />
+                                                <FontAwesomeIcon class="fai" icon={faClock} />
                                             </div>
                                             <div className="mc-1-metric">12</div>
-                                            <div className="mc-1-name">In Progress</div>
+                                            <div className="mc-1-name">Awaiting Results</div>
                                         </div>
                                     </div>
                                     <div className="metric-card" id="metric-card-2">
-                                    <PieChartComponent data={data3} />
+                                        <PieChartComponent data={pieChartData}/>
                                     </div>
-                                    <div className="metric-card" id="metric-card-3" style={{  display: 'flex', justifyContent: 'center' , flex: '1.3'}}>
-                                    
-                                   
-                                    <SingleLineChart data = {data2}/>
+                                    <div className="metric-card" id="metric-card-3">
+                                       <SingleLineChart data={lineChartData}/>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="job-related">
+                                <PlacementTable data={studentsData}/>
                             </div>
                         </div>
                     </div>
