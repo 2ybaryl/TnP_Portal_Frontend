@@ -43,19 +43,19 @@ const AdminSideNav = () => {
               Jobs
             </Link>
           </li>
-          <li>
+          {/* <li>
 
             <Link to="/company-data">
 
-            <FontAwesomeIcon icon={solid("briefcase")} />{" "}
+              <FontAwesomeIcon icon={solid("briefcase")} />{" "}
               &nbsp; Companies
             </Link>
-          </li>
+          </li> */}
           <li>
 
             <Link to="/edit-policy">
 
-            <FontAwesomeIcon icon={solid("pen-to-square")} />
+              <FontAwesomeIcon icon={solid("pen-to-square")} />
               &nbsp;&nbsp;Placement Policy
             </Link>
           </li>

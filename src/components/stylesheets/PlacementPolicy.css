@@ -55,3 +55,10 @@
 #arx{
     width: 40%;
 }
+
+#save-changes{
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
