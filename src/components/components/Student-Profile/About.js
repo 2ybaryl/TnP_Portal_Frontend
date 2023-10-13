@@ -1,4 +1,4 @@
-import { useState, React } from 'react';
+import React, { useState } from 'react';
 import '../../stylesheets/About.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,8 +6,8 @@ import {
   faPlus, faPenToSquare, faAngleDown, faAngleUp, faDeleteLeft, faTrashCan
 } from "@fortawesome/free-solid-svg-icons";
 
-function About(props) {
-  const { title, company, location, date, imageSrc } = props;
+function About() {
+ // const { title, company, location, date, imageSrc } = props;
   const [editMode, setEditMode] = useState(false);
   const headline = "Junior Year student pursuing B.tech in Computer Science & Engineering.";
   const about = "I'm Krati Jain, a web development enthusiast and student at JUET. Creating user-friendly web experiences is my passion. I stay updated with the latest trends and seek opportunities to enhance my skills. Collaborating on innovative projects fuels my drive. As a web developer, I aim to make a positive impact in the ever-evolving world of technology."
